@@ -7,7 +7,7 @@
 
 general:
     artifacts:
-        - Users\AbdulBasit\Desktop\android-play-location-master\android-play-location-master/app/build/outputs/apk/
+        - Users\AbdulBasit\Desktop\android-play-location-master\android-play-location-master\CIServerDemo\app\build\outputs\apk\
 
 machine:
     environment:
@@ -44,3 +44,8 @@ test:
   post:
       - cp -r app/build/outputs $CIRCLE_ARTIFACTS
       - cp -r app/build/outputs/androidTest-results/connected/ $CIRCLE_TEST_REPORTS
+      - cp -r licenses/. $ANDROID_HOME/licenses
+
+checkout:
+  post:
+    - cp -r licenses/. $ANDROID_HOME/licenses
