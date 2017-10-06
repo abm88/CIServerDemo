@@ -7,7 +7,7 @@
 
 general:
     artifacts:
-        - Users\AbdulBasit\Desktop\android-play-location-master\android-play-location-master\CIServerDemo\app\build\outputs\apk\
+        - /Users/AbdulBasit/Desktop/android-play-location-master/android-play-location-master/CIServerDemo/app/build/outputs/apk/
 
 machine:
     environment:
