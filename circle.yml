@@ -45,7 +45,7 @@ test:
   post:
       - cp -r app/build/outputs $CIRCLE_ARTIFACTS
       - cp -r app/build/outputs/androidTest-results/connected/ $CIRCLE_TEST_REPORTS
-      - cp -r licenses/. $ANDROID_HOME/licenses
+
 
 checkout:
   post:
